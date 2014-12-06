@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+html { background: url(../images/sitebg.jpg) repeat scroll 0 0 transparent;}
+:root { overflow-y: scroll }/* 视客户要求 加或不加 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, lengend, input, button, textarea, select, p, blockquote, th, td { margin: 0; padding: 0 }
+table { border-collapse: collapse; border-spacing: 0 }
+img { border: 0 none; vertical-align: top }
+li { list-style-type: none }
+p{line-height:24px;}
+caption, th { text-align: left }
+h1, h2, h3, h4, h5, h6 { font-size: 100% } /* 字体加粗与否，视页面标题更改 */
+body, input, button, textarea, select { font-size: 12px; font-family:"宋体"} /* 或 表单类的字体颜色和body一样 */
+button { cursor: pointer }
+em, cite { font-style: normal }
+body { line-height: 1.17; -webkit-text-size-adjust: none;  color:#656565;}
+a { color:#535353; text-decoration: none; outline:medium none; }
+a:link { color: #535353; text-decoration: none }
+a:visited { }
+a:hover { color: #666 }
+a:focus {}
+a:active {}
+:focus { outline: none }
+.clearfixed:after { content: "."; clear: both; display: block; height: 0; overflow: hidden }
+.clearfixed { zoom: 1 } /* 增加清除浮动样式时，要注意当前元素是否为块结构，如果不是，要添加属性 display: block */
+.clear { display: block!important; float: none!important; clear: both; width: auto!important; height: 0;margin: 0 auto!important; padding: 0!important; font-size: 0; line-height: 0 }
+.fl { float:left;}
+.fr { float:right;}
+
+.tz_bg{background:url(../images/tz_bg.jpg) repeat-y;width:818px;margin:0 auto;padding:0 8px}
+.tz_top{padding:15px 15px 0;}
+.tz_content{width:725px;margin:20px auto 0;border-bottom:2px solid #dad9d0;padding-bottom:37px;_margin:10px auto 0;}
+.tz_h1{font-size:22px;color:#01626d;height:40px;line-height:40px;}
+.tz_h3,.tz_h1,.tz_h2,.tz_h4{font-family:"微软雅黑";text-align:center;}
+.tz_h3{font-size:14px;color:#313131;}
+.tz_h2{font-size:16px;margin-top:30px;color:#313131;}
+.tz_h4{color:#418992;font-size:14px;margin:15px 0 20px 0;}
+.tz_txt{color:#313131;}
+.tz_txt p{ text-indent:2em;}
+.tz_footer{padding-top:20px;}
+.tz_footer p{text-align:center;color:#8a8a8a;}
+.tz_btn{width:180px;height:25px;text-align:center;}
+
+
+
+
+/**************header*****************/
+.body_bg{background:url(../images/bannerbg.jpg) repeat-x left top;}
+.header{background:url(../images/navbg.png) repeat-x left top;height:69px;width:100%;}
+.header_c{margin: 0 auto;position:relative; width:1100px;}
+img.logo{float:left;position:absolute;top:0;}
+.nav {float: right;position: relative;top: 18px;width:495px;}
+.nav ul li {float: left;padding-left: 14px;}
+.nav ul li a {color: #B4CCD2;display: block;font-size:18px;font-family:"微软雅黑";padding: 10px;text-shadow: 1px 1px 1px #3D5155;text-transform: uppercase;}
+.nav ul li a:hover,.nav ul li a.cur{ color: #354649;text-shadow: 0 1px 1px #84AFB8;}
+/**************中间主体内容*****************/
+.bannerart {margin: 0 auto; position: relative;width:1080px;padding: 48px 20px 0;_ padding:0 20px;}
+.bannerart_e {margin: 0 auto; position: relative;width:1000px;_ padding:0 20px;}
+.h_title {position: relative;top: 63px;}
+.h_title h1 {height: 59px;margin-left:74px;width: 763px;font-size:46px;color:#fff;font-family:'幼圆';text-align:left;font-weight:bold;}
+.h_title h2 {height: 16px; margin: 4px auto 0;position: relative;top: 13px;width: 546px;color:#fff;font-family:'幼圆';text-align:center;font-weight:bold;font-size:18px;}
+.mainbg_img {background: url(../images/mainbg.png) no-repeat;height: 346px;position: relative;right: 52px;top: 115px;width: 1138px;}
+img.center_img {left: 319px; position: absolute;top: 16px;}
+.floorstretch {background: url(../images/floorbg.jpg) repeat-x;height: 230px;}
+
+
+/********************
+ * FEATURE CAROUSEL *
+ ********************/
+
+
+ #carousel {height:346px; /* 224px */width:1000px;position:relative;
+ 	font-size:12px;font-family: Arial;}
+ 	#carousel .carousel-image {border:0;display:block;}
+ 	#carousel .carousel-feature { position:absolute;top:-1000px; left:-1000px;cursor:pointer;-moz-box-shadow: 0px 3px 14px #566670;-webkit-box-shadow: 0px 3px 14px #566670;box-shadow: 0px 3px 14px #566670;}
+ 	#carousel .carousel-feature .carousel-caption {position:absolute;bottom:0;width:100%;background-color:#000;}
+ 	#carousel .carousel-feature .carousel-caption p {margin:0;padding:5px;font-weight:bold;font-size:12px;color:white;}
+ 	#carousel .tracker-summation-container {position:absolute;color:white;right:48px;top:230px;padding:3px;margin:3px;background-color:#000;}
+ 	#carousel .tracker-individual-container {position:absolute;color:white;right:48px;top:210px;padding:0;margin:0;}
+ 	#carousel .tracker-individual-container .tracker-individual-blip {margin:0 3px;padding:0 3px;color:white;text-align:center;background-color:#DDD;}
+ 	#carousel .tracker-individual-container.tracker-individual-blip-selected {color:white;font-weight:bold;background-color:#000;}
+ 	#carousel-left {position:absolute;bottom:33px;left:220px;cursor:pointer;}
+ 	#carousel-right { position:absolute; bottom:33px;right:220px;cursor:pointer;}
+
+
+ 	/**************底部信息*****************/
+ 	.bottomcontent {margin: 0 auto;padding: 0 25px;position: relative;width: 1080px;}
+ 	.quicklinks {margin: 0 auto;padding-bottom: 62px;position: relative;right: 12px;width: 1104px;}
+ 	.section {-moz-transition: border 0.4s ease-in 0s;border-top: 6px solid #C8C7BB;float: left;margin: 0 12px; width: 252px;_display:inline;}
+ 	.section h3 {color: #6B6B68;font: 18px "ClarendonRoman",Georgia,Times,serif;letter-spacing: -0.1em;margin-bottom: 10px;padding-top: 17px;}
+ 	.section_list li {margin:10px 0;}
+ 	.section_list li a:hover{color:#c0633b;}
+ 	.section:hover{border-top: 6px solid #c0633b;}
+ 	.section_links_list li{float:left;margin:0px 13px 10px 0;width:90px;}
+ 	.brand_img{width:252px;overflow:hidden;height:120px;}
+ 	.dom1,.dom2{float:left;}
+ 	.dom2{margin-top:5px;}
+ 	.red{color:red;font-weight:bolder;font-size:14px;font-family:'Arial';width:62px;height:20px;display:inline-block;}
+ 	.green{color:#090;font-weight:bolder;font-size:14px;font-family:'Arial';height:20px;display:inline-block;width:62px;}
+ 	.text1{background:url(../images/search.jpg) no-repeat left top;width:142px;height:20px;line-height:20px;border:none;color:#999;padding-left:3px;}
+ 	.btn1{background:url(../images/search.jpg) no-repeat -145px top;width:21px;height:20px;line-height:20px;border:none;cursor:pointer; vertical-align:top;*margin-top:1px;}
+ 	.footer {border-top: 3px solid #DAD9D0;clear: both;margin: 0 auto;padding-top: 13px;width: 1080px;}
+
+ 	.company-info{
+ 		width: 839px;
+ 		margin: auto;
+ 		position: relative;
+ 		top: 140px;
+ 		font-family: 黑体;
+ 		font-size: 20px;
+ 	}
+ 	.company-info strong{
+ 		font-size:30px;
+ 		color:#3b4b4f;
+ 	}
+ 	.myfooter{
+ 		position: fixed;
+ 		bottom: 0px;
+ 		margin: auto;
+ 		width: 100%;
+ 		font-family: 幼圆;
+ 		text-align: center;
+ 		font-size: 17px;
+ 		
+ 		background: #46595f;
+ 		color: aliceblue;
+ 		padding: 8px 0px 8px 0px;
+ 	}
